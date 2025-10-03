@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "bblogistics"
+version = "${version}"
+displayName = "Brightbronze Logistics"
+authors = "contact@codebound-worlds.com"
+description = '''
+Brightbronze Logistics by Codebound Worlds
+'''
+#logoFile = ""
+
+[[dependencies.bblogistics]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bblogistics]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bblogistics]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "bblogistics.mixins.json"

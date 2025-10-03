@@ -1,0 +1,123 @@
+# ============================================
+# OS-specific
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+# ============================================
+# Java / Gradle
+# ============================================
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# Gradle
+.gradle/
+build/
+out/
+bin/
+classes/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Generated files
+*.log
+*.ctxt
+*.hprof
+*.jfr
+
+# ============================================
+# IDEs
+# ============================================
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VSCode
+.vscode/
+.history/
+*.code-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+.loadpath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ============================================
+# Minecraft Modding (Fabric / NeoForge / Architectury)
+# ============================================
+
+# Run directories (Minecraft dev environments)
+run/
+runs/
+
+# Loom (Fabric toolchain)
+.gradle/loom-cache/
+*.launch
+*.args
+*.token
+
+# Mixin debug outputs
+*.mixin.out
+*.mixin.json.out
+
+# Crash reports
+crash-reports/
+
+# User configs
+*.userprefs
+*.local.json
+
+# Logs
+logs/
+
+# ============================================
+# Other
+# ============================================
+
+# Backup / temp
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

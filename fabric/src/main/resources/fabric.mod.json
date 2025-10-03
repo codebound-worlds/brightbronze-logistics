@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "bblogistics",
+  "version": "${version}",
+  "name": "Brightbronze Logistics",
+  "description": "Brightbronze Logistics by Codebound Worlds",
+  "authors": [
+    "contact@codebound-worlds.com"
+  ],
+  "contact": {
+    "homepage": "https://codebound-worlds.com/",
+    "sources": "https://github.com/codebound-worlds/brightbronze-logistics"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/bblogistics/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.codeboundworlds.bblogistics.fabric.BrightbronzeModFabric"
+    ],
+    "client": [
+      "com.codeboundworlds.bblogistics.fabric.client.BrightbronzeModFabricClient"
+    ]
+  },
+  "mixins": [
+    "bblogistics.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
