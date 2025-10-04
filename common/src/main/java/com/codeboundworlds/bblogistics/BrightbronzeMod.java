@@ -12,5 +12,7 @@ public final class BrightbronzeMod {
         PlayerEvent.PLAYER_JOIN.register((ServerPlayer player) -> {
             player.displayClientMessage(Component.literal("Hello World"), false);
         });
+
+        ItemBuilder.init();
     }
 }
