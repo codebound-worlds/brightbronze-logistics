@@ -16,6 +16,7 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.level.block.Block;
 
 public class RegistryItems {
@@ -110,6 +111,30 @@ public class RegistryItems {
             () -> new HoeItem(BRIGHTBRONZE_TIER, new Item.Properties()
                     .arch$tab(CreativeModeTabs.TOOLS_AND_UTILITIES)
                     .attributes(HoeItem.createAttributes(BRIGHTBRONZE_TIER, -2, -1.0f))));
+
+    // Brightbronze Helmet
+    public static final RegistrySupplier<Item> BRIGHTBRONZE_HELMET = ITEMS.register(
+            ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_helmet"),
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.HELMET,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    // Brightbronze Chestplate
+    public static final RegistrySupplier<Item> BRIGHTBRONZE_CHESTPLATE = ITEMS.register(
+            ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_chestplate"),
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    // Brightbronze Leggings
+    public static final RegistrySupplier<Item> BRIGHTBRONZE_LEGGINGS = ITEMS.register(
+            ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_leggings"),
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+
+    // Brightbronze Boots
+    public static final RegistrySupplier<Item> BRIGHTBRONZE_BOOTS = ITEMS.register(
+            ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_boots"),
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.BOOTS,
+                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
 
     public static void register() {
         ITEMS.register();

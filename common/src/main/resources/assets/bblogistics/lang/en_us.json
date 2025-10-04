@@ -9,5 +9,10 @@
     "item.bblogistics.brightbronze_pickaxe": "Brightbronze Pickaxe",
     "item.bblogistics.brightbronze_axe": "Brightbronze Axe",
     "item.bblogistics.brightbronze_shovel": "Brightbronze Shovel",
-    "item.bblogistics.brightbronze_hoe": "Brightbronze Hoe"
+    "item.bblogistics.brightbronze_hoe": "Brightbronze Hoe",
+    "tag.item.bblogistics.brightbronze_armor": "Brightbronze Armor",
+    "item.bblogistics.brightbronze_helmet": "Brightbronze Helmet",
+    "item.bblogistics.brightbronze_chestplate": "Brightbronze Chestplate",
+    "item.bblogistics.brightbronze_leggings": "Brightbronze Leggings",
+    "item.bblogistics.brightbronze_boots": "Brightbronze Boots"
 }

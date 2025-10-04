@@ -5,6 +5,10 @@
     "bblogistics:brightbronze_pickaxe",
     "bblogistics:brightbronze_axe",
     "bblogistics:brightbronze_shovel",
-    "bblogistics:brightbronze_hoe"
+    "bblogistics:brightbronze_hoe",
+    "bblogistics:brightbronze_helmet",
+    "bblogistics:brightbronze_chestplate",
+    "bblogistics:brightbronze_leggings",
+    "bblogistics:brightbronze_boots"
   ]
 }

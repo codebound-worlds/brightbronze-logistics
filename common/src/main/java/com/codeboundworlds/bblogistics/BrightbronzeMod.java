@@ -13,6 +13,8 @@ public final class BrightbronzeMod {
 
     public static final TagKey<Item> BRIGHTBRONZE_TOOLS = TagKey.create(Registries.ITEM,
         ResourceLocation.fromNamespaceAndPath(MOD_ID, "brightbronze_tools"));
+    public static final TagKey<Item> BRIGHTBRONZE_ARMOR = TagKey.create(Registries.ITEM,
+        ResourceLocation.fromNamespaceAndPath(MOD_ID, "brightbronze_armor"));
 
     public static void init() {
         // Fires when a player joins (integrated or dedicated server)
@@ -20,6 +22,7 @@ public final class BrightbronzeMod {
             player.displayClientMessage(Component.literal("Hello World"), false);
         });
 
+        RegistryArmorMaterials.register();
         RegistryBlocks.register();
         RegistryItems.register();
     }
