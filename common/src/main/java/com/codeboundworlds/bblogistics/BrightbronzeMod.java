@@ -3,9 +3,16 @@ package com.codeboundworlds.bblogistics;
 import dev.architectury.event.events.common.PlayerEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 
 public final class BrightbronzeMod {
     public static final String MOD_ID = "bblogistics";
+
+    public static final TagKey<Item> BRIGHTBRONZE_TOOL_MATERIALS = TagKey.create(Registries.ITEM,
+        ResourceLocation.fromNamespaceAndPath(MOD_ID, "brightbronze_tool_materials"));
 
     public static void init() {
         // Fires when a player joins (integrated or dedicated server)
