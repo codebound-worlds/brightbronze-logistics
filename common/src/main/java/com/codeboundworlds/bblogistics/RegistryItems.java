@@ -30,6 +30,12 @@ public class RegistryItems {
         () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
     );
 
+    // Raw Brightbronze
+    public static final RegistrySupplier<Item> RAW_BRIGHTBRONZE = ITEMS.register(
+        ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "raw_brightbronze"),
+        () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS))
+    );
+
     public static void register() {
         ITEMS.register();
     }

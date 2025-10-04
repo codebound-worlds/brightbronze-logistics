@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "bblogistics:brightbronze_block"
+        }
+    ],
+    "result": {
+        "id": "bblogistics:brightbronze_ingot",
+        "count": 9
+    }
+}

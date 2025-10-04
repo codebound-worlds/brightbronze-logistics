@@ -2,5 +2,6 @@
     "block.bblogistics.brightbronze_block": "Block of Brightbronze",
     "item.bblogistics.brightbronze_block": "Block of Brightbronze",
     "item.bblogistics.brightbronze_ingot": "Brightbronze Ingot",
-    "item.bblogistics.brightbronze_nugget": "Brightbronze Nugget"
+    "item.bblogistics.brightbronze_nugget": "Brightbronze Nugget",
+    "item.bblogistics.raw_brightbronze": "Raw Brightbronze"
 }
