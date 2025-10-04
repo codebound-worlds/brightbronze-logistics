@@ -13,6 +13,7 @@ public final class BrightbronzeMod {
             player.displayClientMessage(Component.literal("Hello World"), false);
         });
 
-        ItemBuilder.init();
+        RegistryBlocks.register();
+        RegistryItems.register();
     }
 }
