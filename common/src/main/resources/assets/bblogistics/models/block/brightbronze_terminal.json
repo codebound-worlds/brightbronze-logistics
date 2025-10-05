@@ -1,0 +1,44 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "front": "bblogistics:block/brightbronze_terminal_front",
+    "side": "bblogistics:block/brightbronze_terminal_sides",
+    "top": "bblogistics:block/brightbronze_terminal_top",
+    "bottom": "bblogistics:block/brightbronze_terminal_bottom",
+    "particle": "bblogistics:block/brightbronze_terminal_sides"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#front"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "down": {
+          "texture": "#bottom"
+        }
+      }
+    }
+  ]
+}

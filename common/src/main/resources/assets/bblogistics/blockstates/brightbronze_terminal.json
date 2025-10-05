@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bblogistics:block/brightbronze_terminal"
+    },
+    "facing=south": {
+      "model": "bblogistics:block/brightbronze_terminal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bblogistics:block/brightbronze_terminal",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "bblogistics:block/brightbronze_terminal",
+      "y": 90
+    }
+  }
+}
