@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import com.codeboundworlds.bblogistics.blocks.BrightbronzeTerminal;
+import com.codeboundworlds.bblogistics.blocks.BrightbronzeConnector;
 
 public class RegistryBlocks {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(BrightbronzeMod.MOD_ID,
@@ -20,6 +21,11 @@ public class RegistryBlocks {
     public static final RegistrySupplier<Block> BRIGHTBRONZE_TERMINAL = BLOCKS.register(
             ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_terminal"),
             BrightbronzeTerminal::new);
+
+    // Brightbronze Connector (face-attached plate)
+    public static final RegistrySupplier<Block> BRIGHTBRONZE_CONNECTOR = BLOCKS.register(
+            ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_connector"),
+            BrightbronzeConnector::new);
 
     public static void register() {
         BLOCKS.register();

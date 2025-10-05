@@ -35,6 +35,12 @@ public class RegistryItems {
                         () -> new BlockItem(RegistryBlocks.BRIGHTBRONZE_TERMINAL.get(),
                                         new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)));
 
+        // Brightbronze Connector BlockItem
+        public static final RegistrySupplier<Item> BRIGHTBRONZE_CONNECTOR_ITEM = ITEMS.register(
+                        ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_connector"),
+                        () -> new BlockItem(RegistryBlocks.BRIGHTBRONZE_CONNECTOR.get(),
+                                        new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)));
+
         // Brightbronze Ingot
         public static final RegistrySupplier<Item> BRIGHTBRONZE_INGOT = ITEMS.register(
                         ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_ingot"),
