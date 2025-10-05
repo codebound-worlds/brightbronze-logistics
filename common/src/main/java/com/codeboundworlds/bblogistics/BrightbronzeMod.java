@@ -26,5 +26,6 @@ public final class BrightbronzeMod {
         RegistryBlocks.register();
         RegistryItems.register();
         RegistryBlockEntities.register();
+        RegistryMenuTypes.register();
     }
 }

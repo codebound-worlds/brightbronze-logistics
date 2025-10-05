@@ -13,16 +13,30 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class BrightbronzeTerminalEntity extends BlockEntity implements Container, MenuProvider {
     private final NonNullList<ItemStack> items = NonNullList.withSize(27, ItemStack.EMPTY);
+    private int channel = 0; // 0-15 for the 16 colors
 
     public BrightbronzeTerminalEntity(BlockPos pos, BlockState state) {
         super(RegistryBlockEntities.BRIGHTBRONZE_TERMINAL_ENTITY.get(), pos, state);
+    }
+
+    // Channel management
+    public int getChannel() {
+        return channel;
+    }
+
+    public void setChannel(int channel) {
+        this.channel = Math.max(0, Math.min(15, channel));
+        setChanged();
+    }
+
+    public void cycleChannel() {
+        setChannel((channel + 1) % 16);
     }
 
     // Container implementation
@@ -84,12 +98,14 @@ public class BrightbronzeTerminalEntity extends BlockEntity implements Container
     protected void saveAdditional(CompoundTag tag, HolderLookup.Provider provider) {
         super.saveAdditional(tag, provider);
         ContainerHelper.saveAllItems(tag, items, provider);
+        tag.putInt("Channel", channel);
     }
 
     @Override
     protected void loadAdditional(CompoundTag tag, HolderLookup.Provider provider) {
         super.loadAdditional(tag, provider);
         ContainerHelper.loadAllItems(tag, items, provider);
+        this.channel = tag.getInt("Channel");
     }
 
     // MenuProvider
@@ -100,6 +116,7 @@ public class BrightbronzeTerminalEntity extends BlockEntity implements Container
 
     @Override
     public AbstractContainerMenu createMenu(int id, Inventory inv, Player player) {
-        return ChestMenu.threeRows(id, inv, this);
+        // Return our custom terminal menu
+        return new com.codeboundworlds.bblogistics.menu.BrightbronzeTerminalMenu(id, inv, this);
     }
 }
