@@ -115,26 +115,30 @@ public class RegistryItems {
     // Brightbronze Helmet
     public static final RegistrySupplier<Item> BRIGHTBRONZE_HELMET = ITEMS.register(
             ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_helmet"),
-            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.HELMET,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.HELMET, new Item.Properties()
+                .arch$tab(CreativeModeTabs.COMBAT)
+                .durability(165)));
 
     // Brightbronze Chestplate
     public static final RegistrySupplier<Item> BRIGHTBRONZE_CHESTPLATE = ITEMS.register(
             ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_chestplate"),
-            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+                .arch$tab(CreativeModeTabs.COMBAT)
+                .durability(240)));
 
     // Brightbronze Leggings
     public static final RegistrySupplier<Item> BRIGHTBRONZE_LEGGINGS = ITEMS.register(
             ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_leggings"),
-            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.LEGGINGS, new Item.Properties()
+                .arch$tab(CreativeModeTabs.COMBAT)
+                .durability(225)));
 
     // Brightbronze Boots
     public static final RegistrySupplier<Item> BRIGHTBRONZE_BOOTS = ITEMS.register(
             ResourceLocation.fromNamespaceAndPath(BrightbronzeMod.MOD_ID, "brightbronze_boots"),
-            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.BOOTS,
-                    new Item.Properties().arch$tab(CreativeModeTabs.COMBAT)));
+            () -> new ArmorItem(RegistryArmorMaterials.BRIGHTBRONZE, ArmorItem.Type.BOOTS, new Item.Properties()
+                .arch$tab(CreativeModeTabs.COMBAT)
+                .durability(195)));
 
     public static void register() {
         ITEMS.register();
