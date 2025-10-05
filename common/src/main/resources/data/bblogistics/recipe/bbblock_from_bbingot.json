@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "building",
+    "ingredients": [
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        },
+        {
+            "item": "bblogistics:brightbronze_ingot"
+        }
+    ],
+    "result": {
+        "id": "bblogistics:brightbronze_block",
+        "count": 1
+    }
+}

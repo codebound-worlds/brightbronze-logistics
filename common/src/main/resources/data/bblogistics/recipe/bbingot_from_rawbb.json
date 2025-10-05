@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "bblogistics:raw_brightbronze"
+    },
+    "result": {
+        "id": "bblogistics:brightbronze_ingot"
+    },
+    "cookingtime": 200
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "bblogistics:brightbronze_ingot"
+    }
+  },
+  "result": {
+    "id": "bblogistics:brightbronze_chestplate"
+  }
+}
